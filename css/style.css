@@ -1,0 +1,727 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* -------------------------------CSS for Navbar Starts---------------------------------  */
+
+#container {
+    width: 100%;
+    margin: 0 48px 0 0px;
+    padding: 16px 25px;
+    transition: 0.3s all ease-in-out;
+  }
+    /* default css end */
+  
+  
+  /* navbar regular css start */
+  #header-area{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar-area {
+     height: 0px;
+  }
+  .site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a.site-logo {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s all ease;
+  }
+  a.site-logo:hover{
+      color: #ffffff;
+  }
+
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+  }
+  .site-navbar ul li a {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 28px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s all ease;
+  }
+  .site-navbar ul li a:hover {
+    color: rgb(247 132 221);
+  }
+  .bgnav{
+    transition: all 0.8s ease;
+    background-color: rgb(255 154 255);
+    z-index: 10;
+ } 
+ .bgnav ul li a:hover{
+    color: rgb(135 25 239);
+    transition: 0.3s;
+} 
+  /* navbar regular css end */
+  
+  
+  /* nav-toggler css start */
+  .nav-toggler {
+    border: 3px solid rgb(15, 15, 15);
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+
+  /* -------------------------------CSS for Navbar Ends---------------------------------  */
+
+
+/*---------------------------Home section starts----------------------------*/
+#home{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    background-color: #212121;
+}
+
+.home-1 {
+    font-size: 51px;
+    margin:240px 0 0 92px;
+}
+.home-text{
+    color: #ffffff;
+}
+.home-text p{
+    font-size: 25px;
+    color:rgb(144 144 144);
+    font-weight: 700;
+    padding: 15px 0px 5px 2px;
+}
+.home-text h3{
+    font-size: 66px;
+}
+.Fontawesome-icons-home{
+    display: flex;
+    margin: 2px -9px;
+    font-size: 35px;
+    
+}
+.Fontawesome-icons-home i{
+    padding: 0 16px;
+    color: #ffffff;
+    transition:0.2s ;
+}
+.linkedin i:hover{
+    color: rgb(0 131 183);
+}
+.github i:hover{
+    color: rgb(80, 78, 78);
+}
+.instagram i:hover{
+    color: rgb(221, 102, 55);
+}
+.more_aboutme{
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+.more_aboutme a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    background-color: rgb(247 132 221);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 18px;
+    transition: 0.2s;
+}
+.more_aboutme a:hover{
+    background-color:#8219e3 ;
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 30%);
+}
+/* Button */
+.cvbtn {
+    height: 45px;
+    width: 245px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0px 0px 346px;
+    border-radius: 15px;
+    border-style: none;
+    font-family: system-ui;
+    background-color: rgb(235, 137, 213);
+    transition: 0.5s;
+}
+.cvbtn:hover{
+    background-color: rgb(122, 194, 223);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 30%);
+}
+/* ----- */
+.home-2{
+    
+    margin: 105px 100px 0 0;
+
+}
+.home-2 img{
+    height: 601px;
+    width: 555px;
+    border-radius: 41px;
+    
+}
+/*---------------------------Home section ends----------------------------*/
+
+
+/* -----------------------Effects on home starts------------------------- */
+
+ .effect-wrap .effect{
+    position: absolute;
+    z-index: 1;
+}
+.effect-1{
+    width: 55px;
+    height: 55px;
+    border: 6px solid rgb(114 255 155);;
+    right: 76px;
+    top: 210px;
+    animation: spin 20s linear infinite;
+    border-radius: 8px;
+}
+.effect-2{
+    top: -126px;
+    width: 235px;
+    height: 235px;
+    border: 29px solid #ff71b8;
+    border-radius: 150px;
+    left: 40%;
+    animation: leftBounce 4s ease-in-out infinite;
+
+}
+.effect-3{
+    border-top: 50px solid transparent;
+    border-left: 50px solid #ffaa75;
+    top: 155px;
+    left: 8%;
+    animation: spin 30s linear infinite;
+}
+.effect-3:before{
+    content: '';
+    border-top: 50px solid transparent;
+    border-left: 50px solid #ffaa75;
+    position: absolute;
+    opacity: 0.5;
+    top: -43px;
+    left: -56px;
+}
+.effect-4{
+    width: 100px;
+    height: 100px;
+    top: 549px;
+    left: 39%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    overflow: hidden;
+    animation: spin 30s linear infinite;
+}
+.effect-4 div{
+    width: 2px;
+    background-color: rgb(133 181 200 / 86%);
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes leftBounce {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(25px);
+    }
+}
+/* -----------------------Effects on home ends------------------------- */
+
+/*-------------------------About Me sections starts----------------------- */
+#about{
+    width: 100%;
+    padding: 1px 0 150px 0;
+    font-family: system-ui;
+}
+.secb1{
+    margin-top: 135px;
+}
+.whoami {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 11px;
+    color: rgb(135 25 239);
+}
+.aboutmehead{
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: -14px;
+}
+.aboutme-cont{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 45px;
+    padding: 0 25px;
+}
+.aboutme-cont1{   
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
+    margin: 25px 0px 0px 85px;
+    background: linear-gradient(to left bottom, rgb(255, 170, 117), rgb(255, 115, 199) 100%);
+    border-radius: 11px;
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 11px;
+    padding: 16px;
+    transition: all 0.2s ease-in-out;
+}
+.aboutme-cont1:hover{
+    transform: translate(1px, -8px);
+}
+.helloim span{
+    font-size: 55px;
+    font-weight: 700;
+
+}
+.frontend{
+   color:rgb(135 25 239);
+   font-size: 34px;
+}
+.aboutpara{
+    margin-top: 11px;
+    font-size: 19px;
+    text-align: justify;
+}
+.hero{
+ margin: 11px 130px 0 0;
+}
+.hero img{
+    
+    border-radius: 15px;
+    height: 360px;
+    width: 345px;
+    box-shadow: 2px 2px 11px rgb(0 0 0 / 30%);
+    transition: all 0.2s ease-in-out;
+}
+.hero img:hover{
+    transform: translate(1px, -8px);
+}
+/*-------------------------About Me sections ends----------------------- */
+
+
+/*---------------------Skills section starts-------------------------*/
+
+#Skills-1{
+    padding: 130px 0;
+    background-color: #212121;
+}
+
+.padding{
+	padding: 6%;
+    padding-top: 65px;
+    padding-bottom: 51px;
+}
+/** Layout **/
+.head-myskills{
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    color: #ffffff;
+    margin-right: 21px;
+}
+
+.skill-header{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ffaa75;
+}
+.skill-bars {
+	list-style: none;
+    margin: 0px 65px;
+    background-color: #2d2c2c;
+    border-radius: 11px;
+    padding: 16px;
+    transition: all 0.2s ease-in-out 0s;
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 11px;
+}
+.skill-bars:hover{
+    transform: scale(1.01);
+}
+.skill-bars li {
+    margin: auto;
+    height:15px;
+    background: #ffffff;
+    width: 85%;
+    margin-bottom: 55px;
+    position: relative;
+    border-radius: 11px;
+}
+.skill-bars li strong {
+	position: absolute;
+	left: 0;
+	top: -1rem;
+	font-family: "poppins-bold", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: .115rem;
+	font-weight:600;
+	font-size: 16px;
+	line-height: 0;
+}
+.skill-bars li .progress {
+    background: linear-gradient(to bottom left,#ffaa75, #ff73c7 100%);
+	position: relative;
+	height: 100%;
+    border-radius: 11px;
+}
+.skill-bars li .progress span {
+	position: absolute;
+	right: 0;
+	top: -3rem;
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: white;
+	font-size: 14px;
+	line-height: 1;
+	background:#a731fb;
+	padding: .6rem .6rem;
+	border-radius: 3px;
+}
+.skill-bars li .progress span::after {
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	margin-left: -5px;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-top: 5px solid #a731fb;
+	content: "";
+}
+
+.skill-bars li .percent90    { width: 90%; margin-top: 70px; }
+.skill-bars li .percent80  { width: 80%; }
+.skill-bars li .percent75  { width: 75%; }
+.skill-bars li .percent70  { width: 70%; }
+.skill-bars li .percent85  { width: 85%; }
+.skill-bars li .percent65  { width: 65%; }
+.skill-bars li .percent85-1 { width: 85%; }
+.skill-bars li .percent70-1 { width: 70%; }
+.skill-bars li .percent75-1 { width: 75%; }
+/*---------------------Skills section ends-------------------------*/
+
+/* --------------------Education section starts-------------------------- */
+#education{
+    padding: 135px 0 51px 0;
+}
+.myedu-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: -14px;
+}
+.edu-quote{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #7d9ae9;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 35px 195px;
+  }
+
+.education .box-container .box{
+    width:28rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    position: relative;
+    background-image:linear-gradient(to bottom left,#ffaa75, #ff73c7 100%);
+    border-radius: 11px;
+    padding: 35px 15px 30px 20px;
+    transition: all 0.2s ease-in-out 0s;
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 11px;
+}
+.education .box-container .box:hover{
+    transform: translate(1px, -8px);
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(0 0 0);
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: rgb(0 0 0);
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-2.8rem; 
+    left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#a731fb;
+    background:var(--yellow);
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+.edu-university{
+    color: rgb(61, 61, 61);
+    padding: 5px 0 11px 0px;
+    font-size: 25px;
+}
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+/* --------------------Education section ends-------------------------- */
+
+/* --------------------------Contact Me section starts--------------------- */
+#Contact{
+   background-color: #212121;
+}
+.getintouch-header {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 11px;
+    color: #ffaa75;
+}
+#Contact div span{
+    display: flex;
+    justify-content: center;
+    font-size: 43px;
+    font-weight: 600;
+}
+.contact-form{
+    background: linear-gradient(to bottom left,#ffaa75, #ff73c7 100%);
+    padding: 45px;
+    margin-top: 0px;
+    border-radius: 22px;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 30%);
+}
+.contact-container{
+    padding: 95px 0 1px 0;
+    margin: auto;
+}
+.contact-detailnfields{
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 75px;
+    padding: 0px 95px
+}
+.contact-details{
+    padding: 30px 0;
+}
+.contact-details i{
+    padding: 26px 0;
+}
+.contact-detail1{
+    display: flex;
+    box-shadow: rgb(0 0 0 / 60%) 2px 2px 11px;
+    margin: 18px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.contact-name_email_location{
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 0 40px;
+    padding: 16px 14px;
+}
+.contact-fontawesome{
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 13px;
+    color: #8219e3;
+    transition: 0.2s;
+    margin-top: -11px;
+}
+.contact-fontawesome:hover{
+    color: rgb(235, 137, 213);
+}
+.contact-name_email_location-1{
+    font-weight: 700;
+}
+.contact-fields{
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+    align-items: center;
+    outline: none;
+}
+.contact-fields input{
+    margin-top: 23px;
+    outline: none;
+    height: 40px;
+    width: 500px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(133, 130, 130);
+    padding: 8px 15px;
+}
+#textarea{
+    font-family: sans-serif;
+    height: 105px;
+    width: 500px;
+    font-size: 17px;
+    margin-top: 16px;
+    border-radius: 8px;
+    resize: none;
+    padding: 11px 15px;
+    border: 1px solid rgb(133, 130, 130);
+    outline: none;
+}
+.contact-btn {
+    height: 45px;
+    width: 245px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0px 0px 346px;
+    border-radius: 15px;
+    border-style: none;
+    font-family: system-ui;
+    background-color: rgb(122, 194, 223);
+    color: #ffffff;
+    transition: 0.5s;
+}
+.contact-btn:hover{
+    background-color: #8219e3;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 30%);
+}
+
+/* --------------------------Contact Me section ends--------------------- */
+
+
+/* -----------------------Footer starts-----------------------------*/
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: system-ui;
+    position: sticky;
+    bottom: 0;
+}
+.footer-1{
+    padding: 15px;
+}
+.Footer-name{
+    font-size: 35px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.Footer_fontawesomes{
+    font-size: 23px;
+    padding: 13px;
+}
+.Footer_fontawesomes a {
+    text-decoration: none;
+    padding: 22px;
+    color: rgb(255, 255, 255);
+}
+.Footer_fontawesomes a i{
+    transition: 0.2s;
+}
+.Footer-p{
+    font-size: 18px;
+}
+.Footer-p a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.Footer-p a:hover{
+    text-decoration: underline rgb(122 194 223);
+}
+/* -----------------------Footer ends-----------------------------*/
+

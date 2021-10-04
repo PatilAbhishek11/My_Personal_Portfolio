@@ -1,0 +1,904 @@
+/*-----------------Media Queries for nav-toggler css starts--------------------*/
+  
+@media screen and (max-width: 880px) {
+    #container {
+      max-width:866px;
+      padding: 18px 20px;
+      background-color: rgb(255 154 255);
+    }
+    /* navbar css for mobile start */
+    a.site-logo {
+        font-size: 32px;
+    }
+    .navbar-area {
+        height: 90px;
+     }
+
+    .nav-toggler{
+      display: block;
+    }
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 90px;
+      flex-direction: column;
+      align-items: center;
+      background-color: #292929;
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding: 25px;
+    }
+    .site-navbar ul li a:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+    
+    /*navbar css for mobile ends*/
+  }
+
+  @media (min-width:415px) and (max-width:430px){
+    a.site-logo {
+        font-size: 28px;
+
+    }
+    #container{
+        width: 415px;
+    }
+  }
+
+  /*------------------Media queries mobile breakpoint ends---------------------*/
+
+  /* ------------------media queries for home starts----------------------- */
+
+@media screen and (max-width:1529px){
+    .home-2{
+    
+        margin-top: 138px;
+    
+    }
+    .home-2 img{
+        height: 540px;
+        width: 450px;
+    }
+    
+}
+@media screen and (max-width:1425px){
+    .home-1 {
+        margin: 208px 0 0 88px;
+    }
+    .home-2 img{
+        height: 503px;
+        width: 382px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    #home{
+        display: block;
+        padding: 1px;
+    }
+    
+    .home-1 {
+        font-size: 46px;
+        margin: 135px 0 0 75px;
+    }
+    .home-text h3 {
+        font-size: 56px;
+    }
+    .home-text p {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 11px 0px 4px 2px;
+    }
+    .Fontawesome-icons-home {
+        font-size: 31px;
+    }
+    .more_aboutme a {
+        border-radius: 11px;
+        padding: 15px;
+    }
+    .home-2{
+        display: flex;
+        justify-content: center;
+        margin-top: -60px;
+    }
+    .home-2 img{
+        height: 511px;
+        width: 485px;
+    }
+    
+}
+@media screen and (max-width:880px){
+    
+.home-1 {
+    margin: 82px 0 0 65px;
+}
+.home-text h3 {
+    font-size: 54px;
+}
+}
+@media screen and (max-width:710px){
+    .home-1 {
+        margin: 82px 0 0 60px;
+        font-size: 42px;
+    }
+    .home-text h3 {
+        font-size: 50px;
+    }
+    }
+@media screen and (max-width:551px){
+    .home-1 {
+        font-size: 40px;
+    }
+    .home-text h3 {
+        font-size: 48px;
+    }
+    .home-2 {
+         margin: -31px 8px 0 0;
+       }
+    .home-2 img {
+        height: 475px;
+        width: 425px;
+    }
+}
+@media screen and (max-width:480px){
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .home-1 {
+        margin: -270px 0 0 30px;
+    }
+    .home-text h3 {
+        font-size: 46px;
+    }
+    .home-Skills{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .home-text p {
+        font-size: 22px;
+    }
+    .Fontawesome-icons-home {
+        font-size: 39px;
+    }
+    .Fontawesome-icons-home i {
+        padding: 0 15px;
+    }
+    .home-2{
+        margin: -25px 22px 0 0;
+    }
+    .home-2 img {
+        height: 475px;
+        width: 425px;
+    }
+}
+@media screen and (max-width:290px){
+    .home-1 {
+        margin: 52px 0 0 21px;
+    }
+}
+/* -------------------media queries for home ends-------------------- */
+
+/* ------------------Media queries for effects starts---------------- */
+
+@media screen and (max-width:1001px){
+    .effect-3{
+        top: 114px;
+        left: 22%;
+    } 
+    .effect-4 {
+        top: 380px;
+        left: 65%;
+    }
+}
+@media screen and (max-width:880px){
+    .effect-2 {
+        top: -65px;
+        width: 235px;
+        height: 235px;
+        border: 25px solid #ff71b8;
+        left: 38%;
+     }
+}
+@media screen and (max-width:845px){
+    .effect-1 {
+        right: 74px;
+        top: 283px;
+     }
+    .effect-3 {
+        top: 125px;
+        left: 22%;
+    } 
+    .effect-4 {
+        top: 380px;
+        left: 45%;
+    }
+}
+@media screen and (max-width:765px){
+    .effect-2 {
+        left: 32%;
+     }
+}
+@media screen and (max-width:651px){
+    .effect-1 {
+        right: 76px;
+        top: 210px;
+    }
+    .effect-4 {
+        top: 431px;
+        left: 60%;
+    }
+}
+@media screen and (max-width:520px){
+    .effect-1 {
+        right: 45px;
+        top: 245px;
+    }
+    .effect-4 {
+        top: 438px;
+        left: 60%;
+    }
+}
+@media screen and (max-width:480px){
+    .effect-wrap .effect {
+        position: relative;
+        z-index: 1;
+    }
+    .effect-1 {
+        right: -325px;
+        top: 199px;
+    }
+    .effect-2 {
+        top: -198px;
+        width: 201px;
+        height: 201px;
+        left: 21%;
+        border: 21px solid #ff71b8;
+    }
+    .effect-3 {
+        display: none;
+    }
+    .effect-4 {
+        top: 125px;
+        left: 61%;
+    }
+    .effect-4 div{
+        background-color: #ffb789;
+    }
+   
+}
+@media screen and (max-width:390px){
+    .effect-1 {
+        right: -291px;
+        top: 199px;
+    }
+    .effect-4 {
+        top: 125px;
+        left: 61%;
+    }
+   
+}
+@media screen and (max-width:330px){
+    .effect-1 {
+        right: -245px;
+        top: 66px;
+    }
+    .effect-4 {
+        top: 125px;
+        left: 65%;
+    }
+}
+@media screen and (max-width: 290px){
+    .home-1 {
+        margin: -295px 0 0 21px;
+    }
+    .effect-1 {
+        right: -195px;
+        top: 81px;
+    }
+    .effect-2 {
+        top: -198px;
+        width: 195px;
+        height: 195px;
+        left: 11%;
+        border: 19px solid #ff71b8;
+    }
+    .effect-4 {
+        top: 121px;
+        left: 68%;
+        width: 81px;
+        height: 81px;
+    }
+
+}
+
+
+/* ------------------Media queries for effects ends---------------- */
+
+/* --------------Media queries for about me starts------------------- */
+
+@media screen and (max-width:1260px){
+    .aboutme-cont1{
+        font-size: 23px;
+        margin: 20px 0 0 61px;
+    }
+    .hero{
+        margin-top: 25px;
+    }
+    .hero img{
+        height: 350px;
+        width: 335px;
+    }
+
+
+}
+@media screen and (max-width:1202px){
+    .helloim span{
+        font-size: 52px;
+    }
+}
+@media screen and (max-width:1142px){
+    .whoami{
+        font-size: 22px;
+    }
+    .aboutmehead{
+        font-size: 45px;
+    }
+    .helloim span{
+        font-size: 50px;
+    }
+    .frontend{
+        font-size: 32px;
+    }
+    .hero{
+        margin-right: 35px;
+    }
+    .hero img{
+        height: 340px;
+        width: 325px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:1000px){
+    .aboutme-cont{
+        display: block;
+    }
+    .aboutme-cont1{
+        margin: auto;
+        width: 81%;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    } 
+    .hero img{
+        height: 350px;
+        width: 335px;
+    }
+}
+@media screen and (max-width:880px){
+    #about{
+        padding-bottom: 101px;
+    }
+    .secb1{
+        margin-top:105px
+    }
+    .aboutmehead{
+        font-size: 41px;
+    }
+    .whoami{
+        font-size: 21px;
+    }
+    .helloim span{
+    font-size: 45px;
+    }
+    .frontend{
+    font-size: 31px;
+    }
+    .aboutpara p{
+    font-size: 16px;
+    }
+
+}
+@media screen and (max-width:480px){
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .whoami{
+        font-size: 20px;
+    }
+    .aboutmehead {
+        font-size: 44px;
+    }
+    .aboutme-cont{
+        margin-top: 45px;
+    }
+    .helloim span{
+        font-size: 42px;
+    }
+    .frontend{
+        font-size: 28px;
+    }
+    .hero img{
+        height: 300px;
+        width: 285px;
+    }
+}
+@media screen and (max-width: 330px){
+.home-2 img {
+    height: 390px;
+    width: 339px;
+}
+.aboutme-cont1 {
+    width: 100%;
+}
+.helloim span{
+    font-size: 38px;
+}
+.frontend{
+    font-size: 26px;
+}
+.aboutpara p{
+    font-size: 15px;
+}
+.hero img {
+    height: 270px;
+    width: 255px;
+}
+}
+/* --------------Media queries for about me ends------------------- */
+
+/* ------------------Media Queries for skills starts-------------------- */
+@media screen and (max-width:880px){
+    .skill-bars{
+        margin: 0px 0px;
+    }
+    .head-myskills {
+        font-size: 46px;
+    }
+    .skill-header {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:480px){
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    #Skills-1 {
+        padding: 89px 0;
+    }
+    .head-myskills {
+        font-size: 44px;
+    }
+    .padding {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+    .skill-header {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 321px){
+.skill-header {
+    font-size: 22px;
+}
+.skill-bars li strong {
+    font-size: 14px;
+}
+}
+/* ------------------Media Queries for skills ends-------------------- */
+
+/*------------------Media queries for Education Section starts------------------*/
+
+@media screen and (max-width:1400px){
+    .education .box-container{
+        padding: 35px 105px;
+      } 
+}
+@media screen and (max-width:1200px){
+    .education .box-container{
+        padding: 35px 75px;
+      } 
+}
+@media screen and (max-width:1200px){
+    .education .box-container{
+        padding: 35px 30px;
+      } 
+}
+@media screen and (max-width:1154px){
+    .education .box-container{
+        padding: 25px 25px;
+      } 
+}
+@media screen and (max-width:1027px){
+    .education .box-container {
+        display: block;
+        padding: 25px;
+    }
+    .education .box-container .box {
+        margin: auto;
+        margin-top: 51px;
+}
+}
+@media screen and (max-width:480px){
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .education .box-container .box {
+        margin-top: 18px;
+    }
+    .education .box-container .box {
+        width: 21rem;
+    }
+    .myedu-header {
+        font-size: 43px;
+    }
+}
+@media screen and (max-width:380px){
+    .education .box-container {
+        padding: 16px;
+    }
+    .education .box-container .box {
+        margin-top: 25px;
+    }
+    .education .box-container .box i {
+        left: -2.6rem;
+        width: 6rem;
+    }
+}
+@media screen and (max-width:330px){
+    .education .box-container {
+        padding: 16px;
+    }
+    .education .box-container .box span{
+        font-size: 17px;
+    }
+    .education .box-container .box {
+        width: 295px;
+    }
+}
+@media screen and (max-width:290px){
+    .education .box-container .box {
+        width: 255px;
+    }
+    .education .box-container .box span {
+        font-size: 13px;
+    }
+}
+/*------------------Media queries for Education Section ends------------------*/
+
+/* -------------Media queries for Contact Me section starts-------------- */
+
+@media screen and (max-width:1350px){
+    .contact-detailnfields {
+        margin: 65px 55px;
+        padding: 0px 35px;
+    } 
+    .contact-form {
+        padding: 40px;
+    }
+    .contact-fields input {
+        height: 38px;
+        width: 485px;
+    }
+    #textarea {
+        height: 100px;
+        width: 485px;
+    } 
+    .contact-detail1 {
+       margin: 15px;
+    }
+
+}
+@media screen and (max-width: 1140px){
+    .contact-name_email_location {
+    font-size: 15px;
+    padding: 14px 6px;
+    }
+    .contact-fontawesome {
+    font-size: 21px;
+    padding: 6px 10px;
+    }
+    .contact-detailnfields {
+    margin: 60px 45px;
+    padding: 0px 5px;
+    }
+    .contact-fields input {
+    width: 465px;
+    }
+    #textarea {
+    width: 465px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .contact-form {
+        padding: 21px;
+    }
+    .contact-detail1 {
+        margin: 11px;
+    }
+    .contact-detailnfields {
+    margin: 60px 21px;
+    padding: 0px 5px;
+    }
+    .contact-fields input {
+        width: 445px;
+    }
+    #textarea {
+        width: 445px;
+    }
+}
+@media screen and (max-width: 900px){
+    .contact-container {
+        padding-top: 85px;
+    }
+    .contact-detailnfields {
+        display: block;
+        margin-top: 0px;
+    }
+    .contact-detail1 {
+        margin: auto;
+        width: 300px;
+        margin-top: 12px;
+    }
+    .contact-form {
+        padding: 21px;
+        width: 535px;
+        margin: auto;
+        margin-bottom: 85px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:600px){
+    .contact-detail1 {
+        width: 275px;
+    }
+    .contact-form {
+        width: 436px;   
+    }
+    .contact-name_email_location {
+        font-size: 14px;
+        padding: 15px 6px;
+    }
+    .contact-fontawesome{
+        font-size: 20px;
+    }
+    .contact-fields input {
+        width: 375px;
+    }
+    #textarea {
+        width: 375px;
+    }
+    .contact-btn{
+        width: 221px;
+    }
+}
+@media screen and (max-width:480px){
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    #Contact div span {
+        font-size: 44px; 
+    }
+    .contact-container {
+        padding-top: 75px;
+        padding-bottom: 70px;
+    }
+    .contact-detail1 {
+        width: 341px;
+    }
+    .contact-fontawesome {
+        font-size: 23px;
+        padding: 8px 10px;
+    }
+    .contact-name_email_location {
+        font-size: 17px;
+        padding: 15px 9px;
+    }
+    .contact-form {
+        padding-top: 35px;
+        width: 385px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .contact-detailnfields {
+      display:block;
+      margin: 14px 8px;
+      padding: 0px 5px;
+    }
+    .contact-details {
+        padding: 21px 0;
+    }
+    .contact-fields input {
+        width: 335px;
+        height: 45px;
+    }
+    #textarea {
+        width: 335px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:390px){
+    
+    .contact-name_email_location {
+    font-size: 16px;
+    padding: 16px 5px;
+    }
+    .contact-detail1 {
+    width: 312px;
+    }
+    .contact-detailnfields {
+    margin: 6px 11px;
+    padding: 0px;
+    }
+    .contact-form {
+    width: 338px;
+    }
+    .contact-fields input {
+    height: 42px;
+    width: 301px;
+    }
+    #textarea {
+    width: 301px;
+    height: 101px;
+    }
+}
+@media screen and (max-width:330px){
+    
+    #Contact div span {
+    font-size: 41px;
+    }
+    .contact-details {
+     padding: 15px 0;
+    }
+    .contact-detail1 {
+        width: 268px;
+    }
+    .contact-fontawesome {
+    font-size: 21px;
+    padding: 8px 9px;
+    }
+    .contact-name_email_location {
+    font-size: 14px;
+    padding: 14px 1px;
+    }
+    .contact-form {
+        width: 296px;
+    }
+    .contact-fields input {
+    width: 256px;
+    }
+    #textarea {
+    width: 256px;
+    }
+    .contact-btn {
+        width: 209px;
+    }
+}
+@media screen and (max-width:290px){
+    .contact-detailnfields {
+        margin: 6px 8px;
+        }
+    #Contact div span {
+        font-size: 40px;
+        }
+    .contact-detail1 {
+        width: 242px;
+        margin: 11px;
+    }
+    .contact-fontawesome {
+        font-size: 18px;
+        padding: 6px 5px;
+    }
+    
+    .contact-details i {
+        padding: 25px 1px;
+    }
+    .contact-name_email_location {
+        font-size: 13px;
+        padding: 14px 0px;
+    }
+    .contact-form {
+        width: 265px;
+    }
+    .contact-fields input {
+        height: 40px;
+        width: 238px;
+    }
+    #textarea {
+        height: 95px;
+        width: 238px;
+    }
+    .contact-btn {
+        height: 35px;
+        width: 205px;
+    }
+}
+
+/* -------------Media queries for Contact Me section ends-------------- */
+
+/* ----------------Media Queries for Footer starts--------------- */
+ 
+@media screen and (max-width:880px){
+    .Footer-name {
+        font-size: 33px;
+    }
+    .Footer-p {
+        font-size: 17px;
+    }
+ }
+ @media screen and (max-width:480px){
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .Footer-name {
+        font-size: 31px;
+    }
+    .Footer-p {
+        font-size: 16px;
+    }
+    .Footer_fontawesomes a {
+        padding: 16px;
+    }
+ }
+ @media screen and (max-width:380px){
+    .Footer-name {
+        font-size: 30px;
+    }
+    .Footer-p {
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width:290px){
+    .Footer-name {
+        font-size: 28px;
+    }
+    .Footer-p {
+        font-size: 15px;
+    }
+    .Footer_fontawesomes a {
+        padding: 15px;
+    }
+ }
+
+/* ----------------Media Queries for Footer ends--------------- */
