@@ -444,8 +444,8 @@
         font-size: 28px;
     }
     .hero img{
-        height: 300px;
-        width: 285px;
+        height: 305px;
+        width: 290px;
     }
 }
 @media screen and (max-width: 330px){
@@ -733,7 +733,7 @@
     }
     .contact-form {
         padding-top: 35px;
-        width: 385px;
+        width: 370px;
         margin: auto;
         margin-top: 15px;
     }
@@ -746,11 +746,11 @@
         padding: 21px 0;
     }
     .contact-fields input {
-        width: 335px;
+        width: 330px;
         height: 45px;
     }
     #textarea {
-        width: 335px;
+        width: 330px;
         height: 100px;
     }
 }
